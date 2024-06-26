@@ -1,0 +1,20 @@
+// .Reviewed {
+//   .mobile {
+//     display: none;
+//   }
+// }
+@media (max-width: 600px) {
+  .Reviewed {
+    .p-56 {
+      padding: 5%;
+
+      .text-5xl {
+        font-size: 1.5em;
+        margin-top: 4%;
+      }
+    }
+    .p-10 {
+      padding: 3%;
+    }
+  }
+}

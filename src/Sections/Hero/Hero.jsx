@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className="Hero bg-blue-100">
       <Nav />
-      <div className="p-56 py-12 ">
+      <div className="p-56 py-12">
         <div className="flex justify-center text-left">
           <div className="">
             <h6
