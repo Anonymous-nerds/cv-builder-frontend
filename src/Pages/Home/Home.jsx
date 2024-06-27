@@ -5,6 +5,7 @@ import Hero from "../../Sections/Hero/Hero";
 import Reviewed from "../../Sections/Reviewed/Reviewed";
 import ResumeSection from "../../Sections/ResumeSection/ResumeSection";
 import CoverLetterSection from "../../Sections/CoverLetterSection/CoverLetterSection";
+import How from "../../Sections/How/How";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Features />
       <ResumeSection />
       <CoverLetterSection />
+      <How />
     </div>
   );
 };
