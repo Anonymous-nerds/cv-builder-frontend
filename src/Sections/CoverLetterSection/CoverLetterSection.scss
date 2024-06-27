@@ -1,0 +1,15 @@
+// .CoverLetterSection {
+//   .mobile {
+//     display: none;
+//   }
+// }
+@media (max-width: 600px) {
+  .CoverLetterSection {
+    .p-32 {
+      padding: 3%;
+    }
+    .p-10 {
+      padding: 3%;
+    }
+  }
+}
