@@ -1,0 +1,19 @@
+// .Features {
+//   .mobile {
+//     display: none;
+//   }
+// }
+@media (max-width: 600px) {
+  .Features {
+    .p-56 {
+      padding: 3%;
+
+      br {
+        display: none;
+      }
+    }
+    .p-10 {
+      padding: 5%;
+    }
+  }
+}

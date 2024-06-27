@@ -1,0 +1,15 @@
+// .ResumeSection {
+//   .mobile {
+//     display: none;
+//   }
+// }
+@media (max-width: 600px) {
+  .ResumeSection {
+    .p-32 {
+      padding: 3%;
+    }
+    .p-10 {
+      padding: 3%;
+    }
+  }
+}
