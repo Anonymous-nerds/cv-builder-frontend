@@ -6,6 +6,7 @@ import Reviewed from "../../Sections/Reviewed/Reviewed";
 import ResumeSection from "../../Sections/ResumeSection/ResumeSection";
 import CoverLetterSection from "../../Sections/CoverLetterSection/CoverLetterSection";
 import How from "../../Sections/How/How";
+import Footer from "../../Sections/Footer/Footer";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <ResumeSection />
       <CoverLetterSection />
       <How />
+      <Footer />
     </div>
   );
 };
