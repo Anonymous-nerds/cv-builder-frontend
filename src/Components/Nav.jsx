@@ -11,7 +11,7 @@ const navigation = [
   // { name: "Github", href: "https://github.com/anasyakubu", target: "_blank" },
   { name: "Resume", href: "/Resume" },
   { name: "Cover Letter", href: "/Letter" },
-  { name: "Blog", href: "/Blog" },
+  { name: "Blog", href: "https://blog-3-post.vercel.app/", target: "_blank" },
   { name: "FAQ", href: "/FAQ" },
 ];
 
@@ -42,7 +42,7 @@ export default function Nav() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-[#f8f8f8]"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-[#000]"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -54,6 +54,7 @@ export default function Nav() {
               <a
                 key={item.name}
                 href={item.href}
+                target={item.target}
                 className="text-xl font-semibold leading-6 text-black"
                 style={{ fontSize: "12px" }}
               >
@@ -92,7 +93,7 @@ export default function Nav() {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#1b1b1b] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#fff] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
@@ -100,7 +101,7 @@ export default function Nav() {
               </a>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-white"
+                className="-m-2.5 rounded-md p-2.5 text-black"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -114,7 +115,8 @@ export default function Nav() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white 0"
+                      target={item.target}
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black 0"
                     >
                       {item.name}
                     </a>
@@ -123,24 +125,24 @@ export default function Nav() {
                 <div className="py-6 flex lg:flex-1 lg:justify-end">
                   <a
                     href="https://www.instagram.com/anass.developer/"
-                    className="p-3 bg-white rounded-full m-2 icon"
+                    className="p-3 bg-black rounded-full m-2 icon"
                     target="_blank"
                   >
-                    <FaInstagram className="text-black" />
+                    <FaInstagram className="text-white" />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/anas-yakubu-02a20725a/"
-                    className="p-3 bg-white rounded-full m-2 icon"
+                    className="p-3 bg-black rounded-full m-2 icon"
                     target="_blank"
                   >
-                    <FaLinkedin className="text-black" />
+                    <FaLinkedin className="text-white" />
                   </a>
                   <a
                     href="https://github.com/anasyakubu"
-                    className="p-3 bg-white rounded-full m-2 icon"
+                    className="p-3 bg-black rounded-full m-2 icon"
                     target="_blank"
                   >
-                    <FaGithub className="text-black" />
+                    <FaGithub className="text-white" />
                   </a>
                 </div>
               </div>
