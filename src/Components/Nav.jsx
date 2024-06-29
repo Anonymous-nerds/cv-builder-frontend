@@ -7,10 +7,10 @@ import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/#About" },
+  // { name: "About", href: "/#About" },
   // { name: "Github", href: "https://github.com/anasyakubu", target: "_blank" },
   { name: "Resume", href: "/Resume" },
-  { name: "Cover Letter", href: "/Letter" },
+  { name: "Cover Letter", href: "/CoverLetter" },
   { name: "Blog", href: "https://blog-3-post.vercel.app/", target: "_blank" },
   { name: "FAQ", href: "/FAQ" },
 ];

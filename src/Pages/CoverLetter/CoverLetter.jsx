@@ -1,14 +1,15 @@
 // import React from 'react'
+
 import Footer from "../../Sections/Footer/Footer";
 import StepSection from "../../Sections/StepSection/StepSection";
 
-const Resume = () => {
+const CoverLetter = () => {
   return (
-    <div className="Resume">
-      <StepSection btnName="Create My Resume" />
+    <div className="CoverLetter">
+      <StepSection btnName="Create My Cover Letter" />
       <Footer />
     </div>
   );
 };
 
-export default Resume;
+export default CoverLetter;

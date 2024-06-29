@@ -3,7 +3,7 @@ import Image from "../../assets/Resume-pana.svg";
 import Nav from "../../Components/Nav";
 import "./StepSection.scss";
 
-const StepSection = () => {
+const StepSection = ({ btnName, btnLink }) => {
   return (
     <div className="StepSection bg-blue-50">
       <Nav />
@@ -64,8 +64,13 @@ const StepSection = () => {
                 </div>
                 <img className="w-72" src={Image} />
                 <div className="mt-5">
-                  <button className="bg-gray-900 text-white text-md w-full p-3 rounded-full pr-10 pl-10">
-                    Create My CV
+                  <button
+                    className="bg-gray-900 text-white text-md w-full p-3 rounded-full pr-10 pl-10"
+                    onClick={() => {
+                      window.location = "/App";
+                    }}
+                  >
+                    {btnName}
                   </button>
                 </div>
               </div>

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import { Toaster } from "react-hot-toast";
 import Resume from "./Pages/Resume/Resume";
+import CoverLetter from "./Pages/CoverLetter/CoverLetter";
 // 1. import `NextUIProvider` component
 
 // import axios from "axios";
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/Resume" element={<Resume />}></Route>
+            <Route path="/CoverLetter" element={<CoverLetter />}></Route>
           </Routes>
         </BrowserRouter>
       </div>
