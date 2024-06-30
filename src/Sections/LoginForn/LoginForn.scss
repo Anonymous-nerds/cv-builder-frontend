@@ -1,0 +1,21 @@
+.LoginForn {
+  .logo {
+    display: none;
+  }
+  .register {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .LoginForn {
+    .card {
+      display: none;
+    }
+    .logo {
+      display: block;
+    }
+    .register {
+      display: block;
+    }
+  }
+}

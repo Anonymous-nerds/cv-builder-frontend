@@ -1,0 +1,19 @@
+// .Login {
+//   .mobile {
+//     display: none;
+//   }
+// }
+@media (max-width: 600px) {
+  .Login {
+    .card {
+      display: none;
+    }
+    .p-10 {
+      padding: 3%;
+
+      .p-5 {
+        padding: 2%;
+      }
+    }
+  }
+}

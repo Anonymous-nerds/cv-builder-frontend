@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home";
 import { Toaster } from "react-hot-toast";
 import Resume from "./Pages/Resume/Resume";
 import CoverLetter from "./Pages/CoverLetter/CoverLetter";
+import Login from "./Pages/Login/Login";
 // 1. import `NextUIProvider` component
 
 // import axios from "axios";
@@ -15,12 +16,13 @@ function App() {
   return (
     <>
       <div className="App font-nunito-eb">
-        <Toaster position="top-center" toastOptions={{ duration: 2000 }} />
+        <Toaster position="top-center" toastOptions={{ duration: 4000 }} />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/Resume" element={<Resume />}></Route>
             <Route path="/CoverLetter" element={<CoverLetter />}></Route>
+            <Route path="/Login" element={<Login />}></Route>
           </Routes>
         </BrowserRouter>
       </div>
