@@ -5,7 +5,7 @@ import LoginForn from "../../Sections/LoginForn/LoginForn";
 import "./Login.scss";
 const Login = () => {
   return (
-    <div className="Login">
+    <div className="Login" style={{ height: "100vh" }}>
       <div className="p-10">
         <div className="flex flex-col md:flex-row gap-6">
           {/*  */}

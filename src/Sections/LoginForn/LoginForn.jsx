@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import "./LoginForn.scss";
-import { FaInstagram, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 import Logo from "../../assets/logo.png";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
@@ -57,36 +58,36 @@ const LoginForn = () => {
               Login
             </button>
           </div>
-          <hr className="mt-8 bg-blue-100 lg:w-[70%]" />
+          <hr className="mt-8 bg-blue-100 w-full" />
           <div className="my-5">
-            <div className="">
+            <div className="flex justify-center">
               <button
                 type="button"
-                className="lg:w-[50%] w-full flex gap-3 p-3 m-3 text-xl bg-white border-2 outline-none border-gray-200 rounded-md"
+                className="lw-full flex gap-3 p-3 m-3 text-xl bg-white border-2 outline-none border-gray-200 rounded-md"
                 onClick={(e) => {
                   e.preventDefault();
                   toast.error("Coming Soon... Try Using Email and Password");
                 }}
               >
-                <FaInstagram />
-                <span className="text-sm">Continue With Google</span>
+                <FcGoogle />
+                <span className="text-sm btn-text">Continue With Google</span>
               </button>
               <button
                 type="button"
-                className="lg:w-[50%] w-full  flex gap-3 p-3 m-3 text-xl bg-white border-2  outline-none  border-gray-200 rounded-md"
+                className="lw-full  flex gap-3 p-3 m-3 text-xl bg-white border-2  outline-none  border-gray-200 rounded-md"
                 onClick={(e) => {
                   e.preventDefault();
                   toast.error("Coming Soon... Try Using Email and Password");
                 }}
               >
                 <FaGithub />
-                <span className="text-sm">Continue With Github</span>
+                <span className="text-sm btn-text">Continue With Github</span>
               </button>
             </div>
             <div className="mt-5 flex justify-center text-center">
               <p className="text-sm register">
                 Don`t have an account?{" "}
-                <Link className="underline font-extrabold" to="/">
+                <Link className="underline font-extrabold" to="/Register">
                   Register
                 </Link>
               </p>
