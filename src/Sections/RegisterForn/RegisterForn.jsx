@@ -35,7 +35,7 @@ const RegisterForn = () => {
               <br />
               <input
                 type="text"
-                className={`p-3 my-4 w-full outline-none border border-b border-[black] rounded-md text-sm`}
+                className={`p-3 my-3 w-full outline-none border border-b border-[black] rounded-md text-sm`}
                 placeholder="Eg: Anas Yakubu"
               />
             </div>
@@ -51,14 +51,14 @@ const RegisterForn = () => {
               <br />
               <input
                 type="text"
-                className="p-3 my-4 w-full outline-none border border-b border-black rounded-md text-sm"
+                className="p-3 my-3 w-full outline-none border border-b border-black rounded-md text-sm"
                 placeholder="Eg: example01"
               />
             </div>
           </div>
 
           {/*  */}
-          <div className="my-3 space-y-2 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-0">
+          <div className="my-2 space-y-2 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-0">
             <div className="">
               <label
                 htmlFor=""
@@ -70,7 +70,7 @@ const RegisterForn = () => {
               <br />
               <input
                 type="text"
-                className={`p-3 my-4 w-full outline-none border border-b border-[black] rounded-md text-sm`}
+                className={`p-3 my-3 w-full outline-none border border-b border-[black] rounded-md text-sm`}
                 placeholder="Eg: yakubuanas04@gmail.com"
               />
             </div>
@@ -86,13 +86,13 @@ const RegisterForn = () => {
               <br />
               <input
                 type="text"
-                className="p-3 my-4 w-full outline-none border border-b border-black rounded-md text-sm"
+                className="p-3 my-3 w-full outline-none border border-b border-black rounded-md text-sm"
                 placeholder="Eg: +2349090999937"
               />
             </div>
           </div>
           {/*  */}
-          <div className="my-3 space-y-2 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-0">
+          <div className="my-2 space-y-2 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-0">
             <div className="">
               <label
                 htmlFor=""
@@ -104,7 +104,7 @@ const RegisterForn = () => {
               <br />
               <input
                 type="text"
-                className={`p-3 my-4 w-full outline-none border border-b border-[black] rounded-md text-sm`}
+                className={`p-3 my-3 w-full outline-none border border-b border-[black] rounded-md text-sm`}
                 placeholder="Anas Yakubu"
               />
             </div>
@@ -120,7 +120,7 @@ const RegisterForn = () => {
               <br />
               <input
                 type="text"
-                className="p-3 my-4 w-full outline-none border border-b border-black rounded-md text-sm"
+                className="p-3 my-3 w-full outline-none border border-b border-black rounded-md text-sm"
                 placeholder="Eg: example01"
               />
             </div>
@@ -132,7 +132,7 @@ const RegisterForn = () => {
             </button>
           </div>
           <hr className="mt-8 bg-blue-100 w-full" />
-          <div className="my-5">
+          <div className="my-4">
             <div className="flex justify-center">
               <button
                 type="button"

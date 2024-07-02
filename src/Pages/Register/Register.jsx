@@ -6,11 +6,11 @@ import "./Register.scss";
 const Register = () => {
   return (
     <div className="Register">
-      <div className="p-10">
+      <div className="p-8">
         <div className="flex flex-col md:flex-row gap-3">
           {/*  */}
           <div
-            className="w-full md:w-1/3 bg-blue-100 rounded-2xl p-5 py-32 shadow-md card"
+            className="w-full md:w-1/3 bg-blue-100 rounded-2xl p-5 py-24 shadow-md card"
             style={{ height: "85vh" }}
           >
             <RegisterCard />
