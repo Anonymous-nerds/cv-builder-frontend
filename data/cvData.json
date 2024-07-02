@@ -1,0 +1,65 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "contact": {
+        "email": "yakubuhauwa872@gmail.com",
+        "phone": "+2347037069872",
+        "address": "zoo road housing estate, kano"
+      },
+      "_id": "6683f7a9aa77bd48852520bc",
+      "name": "Anas Yakubu",
+      "type": "IT",
+      "about": [
+        "I am hardworking, energetic and ambitious person who has developed a mature and responsible approach to any task that I undertake or situation that I am presented with.",
+        "I am seeking a challenging role where I can contribute my skills in teamwork, and creative problem-solving to achieve organizational objectives."
+      ],
+      "skill": [
+        "Public Relations",
+        "Teamwork",
+        "Time Management",
+        "Critical Thinking"
+      ],
+      "education": [
+        "B.Sc. Political Science",
+        "West African Senior School Certificate Examination"
+      ],
+      "languages": ["English", "Hausa"],
+      "courseWork": ["Digital Marketing", "Product Management", "Copywriting"],
+      "userID": "6683f760aa77bd48852520ba",
+      "createdAt": "2024-07-02T12:50:49.692Z",
+      "updatedAt": "2024-07-02T12:50:49.692Z",
+      "__v": 0
+    },
+    {
+      "contact": {
+        "email": "yakubuhauwa872@gmail.com",
+        "phone": "+2347037069872",
+        "address": "zoo road housing estate, kano"
+      },
+      "_id": "6683f817aa77bd48852520c2",
+      "name": "Hauwa Yakubu",
+      "type": "Business",
+      "about": [
+        "I am hardworking, energetic and ambitious person who has developed a mature and responsible approach to any task that I undertake or situation that I am presented with.",
+        "I am seeking a challenging role where I can contribute my skills in teamwork, and creative problem-solving to achieve organizational objectives."
+      ],
+      "skill": [
+        "Public Relations",
+        "Teamwork",
+        "Time Management",
+        "Critical Thinking"
+      ],
+      "education": [
+        "B.Sc. Political Science",
+        "West African Senior School Certificate Examination"
+      ],
+      "languages": ["English", "Hausa"],
+      "courseWork": ["Digital Marketing", "Product Management", "Copywriting"],
+      "userID": "6683f7fdaa77bd48852520c0",
+      "createdAt": "2024-07-02T12:52:39.162Z",
+      "updatedAt": "2024-07-02T12:52:39.162Z",
+      "__v": 0
+    }
+  ]
+}

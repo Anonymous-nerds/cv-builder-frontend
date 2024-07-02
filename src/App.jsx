@@ -6,6 +6,7 @@ import Resume from "./Pages/Resume/Resume";
 import CoverLetter from "./Pages/CoverLetter/CoverLetter";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
+import Cv from "./Pages/Cv/cv";
 // 1. import `NextUIProvider` component
 
 // import axios from "axios";
@@ -25,6 +26,7 @@ function App() {
             <Route path="/CoverLetter" element={<CoverLetter />}></Route>
             <Route path="/Login" element={<Login />}></Route>
             <Route path="/Register" element={<Register />}></Route>
+            <Route path="/Cv" element={<Cv />}></Route>
           </Routes>
         </BrowserRouter>
       </div>
