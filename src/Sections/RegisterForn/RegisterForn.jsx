@@ -15,10 +15,10 @@ const RegisterForn = () => {
       <div className="">
         <img className="w-10 logo" src={Logo} alt="" />
         <h2
-          className="text-2xl font-mono font-bold mt-10"
-          style={{ letterSpacing: "1px" }}
+          className="text-2xl font-bold mt-10"
+          style={{ letterSpacing: "1.5px" }}
         >
-          Create an account
+          Create an Account
         </h2>
       </div>
       <div className="my-5">
@@ -27,8 +27,8 @@ const RegisterForn = () => {
             <div className="">
               <label
                 htmlFor=""
-                className="text-md font-thin"
-                style={{ letterSpacing: "2px" }}
+                className="text-sm font-thin"
+                style={{ letterSpacing: "0.5px" }}
               >
                 Full Name <span className="text-red-500">*</span>
               </label>{" "}
@@ -43,8 +43,8 @@ const RegisterForn = () => {
             <div className="">
               <label
                 htmlFor=""
-                className="text-md font-thin"
-                style={{ letterSpacing: "2px" }}
+                className="text-sm font-thin"
+                style={{ letterSpacing: "0.5px" }}
               >
                 Username <span className="text-red-500">*</span>
               </label>{" "}
@@ -62,8 +62,8 @@ const RegisterForn = () => {
             <div className="">
               <label
                 htmlFor=""
-                className="text-md font-thin"
-                style={{ letterSpacing: "2px" }}
+                className="text-sm font-thin"
+                style={{ letterSpacing: "0.5px" }}
               >
                 Email <span className="text-red-500">*</span>
               </label>{" "}
@@ -78,8 +78,8 @@ const RegisterForn = () => {
             <div className="">
               <label
                 htmlFor=""
-                className="text-md font-thin"
-                style={{ letterSpacing: "2px" }}
+                className="text-sm font-thin"
+                style={{ letterSpacing: "0.5px" }}
               >
                 Phone <span className="text-red-500">*</span>
               </label>{" "}
@@ -96,8 +96,8 @@ const RegisterForn = () => {
             <div className="">
               <label
                 htmlFor=""
-                className="text-md font-thin"
-                style={{ letterSpacing: "2px" }}
+                className="text-sm font-thin"
+                style={{ letterSpacing: "0.5px" }}
               >
                 Password <span className="text-red-500">*</span>
               </label>{" "}
@@ -112,8 +112,8 @@ const RegisterForn = () => {
             <div className="">
               <label
                 htmlFor=""
-                className="text-md font-thin"
-                style={{ letterSpacing: "2px" }}
+                className="text-sm font-thin"
+                style={{ letterSpacing: "0.5px" }}
               >
                 Confirm Password <span className="text-red-500">*</span>
               </label>{" "}
@@ -126,7 +126,7 @@ const RegisterForn = () => {
             </div>
           </div>
 
-          <div className="my-2 flex justify-center">
+          <div className="my-2">
             <button className="p-3 w-[25%] rounded-lg text-sm bg-gray-900 text-white font-light">
               Register
             </button>
