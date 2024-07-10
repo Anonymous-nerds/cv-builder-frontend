@@ -34,10 +34,10 @@ const CoverLetterSection = () => {
                 formatting. Be persuasive without effort!
               </p>
               <div className="mt-5 flex gap-5">
-                <button className="text-sm bg-transparent text-black border border-black p-4 pr-5 pl-5 rounded-md">
+                <button className="text-sm bg-transparent text-black border border-black p-4 px-5 rounded-sm">
                   Create Cover Letter
                 </button>
-                {/* <button className="text-sm bg-transparent text-black outline-none border border-black p-4 pr-5 pl-5 rounded-md">
+                {/* <button className="text-sm bg-transparent text-black outline-none border border-black p-4 px-5 rounded-sm">
                   Resume Example
                 </button> */}
               </div>
