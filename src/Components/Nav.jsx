@@ -26,7 +26,10 @@ export default function Nav() {
   // };
 
   return (
-    <div className="bg-transparent">
+    <div
+      className="bg-transparent"
+      // style={{ borderBottom: "0.2px solid #999" }}
+    >
       <header className="inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
@@ -64,25 +67,19 @@ export default function Nav() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
-              href="https://www.instagram.com/anass.developer/"
-              className="p-3 bg-black rounded-full m-2 icon"
+              href="/Login"
+              className="p-2 px-5 text-sm bg-black rounded-sm m-2 icon"
               target="_blank"
+              style={{ letterSpacing: "1px" }}
             >
-              <FaInstagram className="text-white" />
+              <span className="text-white">Start Building</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/anas-yakubu-02a20725a/"
-              className="p-3 bg-black rounded-full m-2 icon"
+              href="/Register"
+              className="p-2 px-5 text-sm bg-transparent border border-black rounded-sm m-2 icon"
               target="_blank"
             >
-              <FaLinkedin className="text-white" />
-            </a>
-            <a
-              href="https://github.com/anasyakubu"
-              className="p-3 bg-black rounded-full m-2 icon"
-              target="_blank"
-            >
-              <FaGithub className="text-white" />
+              <span className="text-black">Register</span>
             </a>
           </div>
         </nav>
