@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="">
             <h6
               className="text-sm font-bold"
-              style={{ fontSize: "12px", letterSpacing: "1px" }}
+              style={{ fontSize: "10px", letterSpacing: "1px" }}
             >
               TERMS & CONDITIONS | PRIVACY POLICY | CONTACT US
             </h6>
