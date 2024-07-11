@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { IoMdAddCircle } from "react-icons/io";
 import { FaFilePdf } from "react-icons/fa6";
 
-// import Integrations from "../Integration/Integrations";
+import Integrations from "../Integration/Integrations";
 
 // import AddSkillsBtn from "../../Sections/AddSkillsModal/AddSkillsModal";
 // import SkillsList from "../SkillsList/SkillsList";
@@ -20,11 +20,10 @@ const DashboardContent = () => {
   const navigate = useNavigate();
   const [userData, setUserData] = useState({});
   const [lengths, setLengths] = useState({
-    projectList: 0,
-    testimonyList: 0,
-    messagesList: 0,
+    cvList: 0,
+    coverLetterList: 0,
+    organisationList: 0,
     subscribersList: 0,
-    skillsList: 0,
   });
 
   useEffect(() => {
@@ -57,11 +56,10 @@ const DashboardContent = () => {
     const fetchApiData = async () => {
       try {
         const responses = await Promise.all([
-          fetch("https://anasyakubu-cms-backend.vercel.app/projectList"),
-          fetch("https://anasyakubu-cms-backend.vercel.app/testimonyList"),
-          fetch("https://anasyakubu-cms-backend.vercel.app/messagesList"),
-          fetch("https://anasyakubu-cms-backend.vercel.app/subscribersList"),
-          fetch("https://anasyakubu-cms-backend.vercel.app/skillsList"),
+          fetch("https://api-cv-builder.vercel.app/cv/list"),
+          fetch("https://api-cv-builder.vercel.app/coverLetter/list"),
+          fetch("https://api-cv-builder.vercel.app/organisation/list"),
+          fetch("https://api-cv-builder.vercel.app/organisation/list"),
         ]);
 
         const data = await Promise.all(
@@ -69,11 +67,10 @@ const DashboardContent = () => {
         );
 
         setLengths({
-          projectList: data[0].length,
-          testimonyList: data[1].length,
-          messagesList: data[2].length,
-          subscribersList: data[3].length,
-          skillsList: data[4].length,
+          cvList: data[0].data.length,
+          coverLetterList: data[0].data.length,
+          organisationList: data[0].data.length,
+          subscribersList: data[0].data.length,
         });
       } catch (error) {
         console.error("Error fetching API data:", error);
@@ -118,29 +115,27 @@ const DashboardContent = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 mt-20">
           <div className="bg-blue-100 p-6 rounded-lg shadow-md flex flex-col items-center">
             <FaFilePdf className="text-blue-500 text-5xl mb-4" />
-            <h3 className="text-3xl mt-3 font-semibold">
-              {lengths.projectList}
-            </h3>
+            <h3 className="text-3xl mt-3 font-semibold">{lengths.cvList}</h3>
             <p className="text-gray-700 font-bold">CV/Resume</p>
           </div>
           <div className="bg-blue-100  p-6 rounded-lg shadow-md flex flex-col items-center">
             <BsFileEarmarkMedicalFill className="text-blue-500 text-5xl mb-4" />
             <h3 className="text-3xl mt-3 font-semibold">
-              {lengths.subscribersList}
+              {lengths.coverLetterList}
             </h3>
             <p className="text-gray-700 font-bold">Cover Letter</p>
           </div>
           <div className="bg-blue-100 p-6 rounded-lg shadow-md flex flex-col items-center">
             <PiUsersBold className="text-blue-500 text-5xl mb-4" />
             <h3 className="text-3xl mt-3 font-semibold">
-              {lengths.testimonyList}
+              {lengths.coverLetterList}
             </h3>
             <p className="text-gray-700 font-bold">Members</p>
           </div>
           <div className="bg-blue-100 p-6 rounded-lg shadow-md flex flex-col items-center">
             <GiOrganigram className="text-blue-500 text-5xl mb-4" />
             <h3 className="text-3xl mt-3 font-semibold">
-              {lengths.messagesList}
+              {lengths.organisationList}
             </h3>
             <p className="text-gray-700 font-bold">Organsation</p>
           </div>
@@ -168,9 +163,9 @@ const DashboardContent = () => {
           <SkillsList />
         </div> */}
 
-        {/* <div className="mt-20">
+        <div className="mt-20">
           <Integrations />
-        </div> */}
+        </div>
       </div>
     </div>
   );
