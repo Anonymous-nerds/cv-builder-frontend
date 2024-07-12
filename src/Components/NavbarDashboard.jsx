@@ -7,12 +7,12 @@ import Logo from "../assets/logo.png";
 import User from "../assets/logo.png";
 
 const navigation = [
-  { name: "Overview", href: "/" },
-  { name: "Cv/Resume", href: "/About" },
-  { name: "Cover Letter", href: "/Projects" },
-  { name: "AI", href: "/Subscribers" },
-  { name: "Pricing", href: "/Messages" },
-  { name: "Settings", href: "/Testimony" },
+  { name: "Overview", href: "/dashboard" },
+  { name: "Cv/Resume", href: "/resume" },
+  { name: "Cover Letter", href: "/coverLetter" },
+  { name: "AI", href: "/ai" },
+  { name: "Organisation", href: "/organisation" },
+  { name: "Settings", href: "/settings" },
 ];
 
 export default function Nav() {

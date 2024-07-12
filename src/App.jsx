@@ -8,6 +8,7 @@ import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import Cv from "./Pages/Cv/cv";
 import Dashboard from "./Pages/Dashboard/Dashboard";
+import Organisation from "./Pages/Organisation/Organisation";
 // 1. import `NextUIProvider` component
 
 // import axios from "axios";
@@ -29,7 +30,8 @@ function App() {
             <Route path="/Register" element={<Register />}></Route>
             <Route path="/Cv" element={<Cv />}></Route>
             {/* Dashboard */}
-            <Route path="/Dashboard" element={<Dashboard />}></Route>
+            <Route path="/dashboard" element={<Dashboard />}></Route>
+            <Route path="/organisation" element={<Organisation />}></Route>
           </Routes>
         </BrowserRouter>
       </div>
